@@ -1,4 +1,5 @@
 This is a project for TribeHacks 2016 Logapps Challenge. The original prompt is posted at: https://github.com/ACMWM/Logapps-TribeHacks-Challenge-2016
+To successfully run this program, users are expected to have installed NLTK 3.0+, Java 8, JDK 1.8+ and default encoding set to "UTF-8". Please feel free to report any compatibility issues.
 
 ### Part I FileToSentList.py
 This source file reads trough a text file, identify complete sentences within the file, and initialize each sentence as a Sentence object. The object will have the following fields:
