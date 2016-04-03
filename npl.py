@@ -93,6 +93,7 @@ def Dep_parce_tree(sentList):
                 if base_verb not in ("be", "have", "can"):
                     sent_obj.verb.append(base_verb)
         
+        #Another algorithm of finding verbs
         sent_obj.verb = []
         for v in verbList:
             base_verb = WordNetLemmatizer().lemmatize(v.lower(),'v')

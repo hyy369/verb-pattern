@@ -1,29 +1,29 @@
 Para. #,Sent. #,Subject,Objects,Verbs
-1,1,The GDGPS System ,capabilities features,drive set develop possess
+1,1,The GDGPS System ,capabilities features,drive develop possess
 1,2,The C++ software ,,develop evolve
-2,1,The system ,,automate
-2,2,The software ,aspects,handle include
-2,3,The software ,determination positioning,perform
+2,1,The system ,,
+2,2,The software ,aspects,include handle
+2,3,The software ,positioning determination,perform
 2,4,The system ,applications,support
 2,5,The software ,,test
-2,6,Various positioning modules ,,position port include
+2,6,Various positioning modules ,,include port
 2,7,The system ,,work
 2,8,Flexible adaptation layer ,types,make accommodate
-2,9,Real ,control tools,use
+2,9,Real ,tools control,use
 3,1,The system ,,develop
-3,2,Highly code ,applications embedded,develop support embed
+3,2,Highly code ,applications embedded,develop support
 3,3,There ,,
-3,4,All models ,applications,
+3,4,All models ,applications,demand
 3,5,The system ,,design
-4,1,Parallelized architecture ,solutions,parallelize enable
+4,1,Parallelized architecture ,solutions,enable
 4,2,State-space architecture guarantees ,uniformity,seamless
-4,3,Innovative of the to use ,,achieve
+4,3,Innovative of the to use ,,achieve robustness
 4,4,Unique satellite and signal dynamics ,,develop
 4,5,The system ,,include
-4,6,Innovative for end-to-end redundant system ,reliability,develop provide
-4,7,Uniquely ,parameter attributes,allow
+4,6,Innovative for end-to-end redundant system ,reliability,provide develop
+4,7,Uniquely ,attributes parameter,allow
 4,8,The system ,satellites/receivers,add
-4,9,Unique dynamics ,accuracy,support model
+4,9,Unique dynamics ,accuracy,support
 4,10,Tropospheric delay and stochastic estimation model ,,design
 4,11,The system ,content,exploit
 4,12,The system ,playback,provide
