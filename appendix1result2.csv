@@ -1,0 +1,30 @@
+Para. #,Sent. #,Subject,Objects,Verbs,Ctg. #1,Ctg. #2,Ctg. #3,Ctg. #4,Ctg. #5,Ctg. #6,Ctg. #7
+1,1,The GDGPS System ,capabilities features,drive set develop possess,7+6+2+6=21,5+5+4+0=14,5+4+1+5=15,8+1+1+4=14,4+3+9+4=20,3+3+8+5=19,0+3+2+7=12
+1,2,The C++ software ,,develop evolve,2+4=6,4+1=5,1+2=3,1+9=10,9+6=15,8+2=10,2+6=8
+2,1,The system ,,automate,0=0,0=0,0=0,0=0,0=0,0=0,0=0
+2,2,The software ,aspects,handle include,7+0=7,6+0=6,1+0=1,6+0=6,5+0=5,3+0=3,3+0=3
+2,3,The software ,determination positioning,perform,3=3,6=6,3=3,1=1,5=5,1=1,6=6
+2,4,The system ,applications,support,2=2,4=4,9=9,7=7,7=7,2=2,8=8
+2,5,The software ,,test,0=0,3=3,3=3,7=7,2=2,1=1,7=7
+2,6,Various positioning modules ,,position port include,7+0+0=7,8+0+0=8,5+0+0=5,2+0+0=2,1+0+0=1,1+0+0=1,7+0+0=7
+2,7,The system ,,work,3=3,7=7,3=3,8=8,6=6,3=3,5=5
+2,8,Flexible adaptation layer ,types,make accommodate,0+8=8,0+8=8,0+7=7,0+3=3,0+1=1,0+1=1,0+2=2
+2,9,Real ,control tools,use,7=7,6=6,8=8,7=7,1=1,0=0,8=8
+3,1,The system ,,develop,2=2,4=4,1=1,1=1,9=9,8=8,2=2
+3,2,Highly code ,applications embedded,develop support embed,2+2+7=11,4+4+5=13,1+9+8=18,1+7+1=9,9+7+9=25,8+2+7=17,2+8+8=18
+3,3,There ,,,0=0,0=0,0=0,0=0,0=0,0=0,0=0
+3,4,All models ,applications,,0=0,0=0,0=0,0=0,0=0,0=0,0=0
+3,5,The system ,,design,5=5,1=1,3=3,9=9,7=7,3=3,5=5
+4,1,Parallelized architecture ,solutions,parallelize enable,0+9=9,0+6=6,0+4=4,0+2=2,0+1=1,0+7=7,0+5=5
+4,2,State-space architecture guarantees ,uniformity,seamless,0=0,0=0,0=0,0=0,0=0,0=0,0=0
+4,3,Innovative of the to use ,,achieve,0=0,2=2,2=2,3=3,6=6,5=5,7=7
+4,4,Unique satellite and signal dynamics ,,develop,2=2,4=4,1=1,1=1,9=9,8=8,2=2
+4,5,The system ,,include,0=0,0=0,0=0,0=0,0=0,0=0,0=0
+4,6,Innovative for end-to-end redundant system ,reliability,develop provide,2+0=2,4+0=4,1+0=1,1+0=1,9+0=9,8+0=8,2+0=2
+4,7,Uniquely ,parameter attributes,allow,0=0,0=0,0=0,0=0,0=0,0=0,0=0
+4,8,The system ,satellites/receivers,add,8=8,8=8,0=0,4=4,2=2,8=8,7=7
+4,9,Unique dynamics ,accuracy,support model,2+4=6,4+6=10,9+8=17,7+2=9,7+4=11,2+8=10,8+5=13
+4,10,Tropospheric delay and stochastic estimation model ,,design,5=5,1=1,3=3,9=9,7=7,3=3,5=5
+4,11,The system ,content,exploit,7=7,4=4,3=3,5=5,5=5,6=6,1=1
+4,12,The system ,playback,provide,0=0,0=0,0=0,0=0,0=0,0=0,0=0
+4,13,The Software ,,protect,3=3,5=5,7=7,3=3,8=8,4=4,7=7
