@@ -4,10 +4,13 @@
 #  npl.py - A project for TribaHacks 2016 - LOGAPPS Challenge
 #
 #  Created on: Apr 1, 2016
-#  Author: Yangyang He
+#  Author: Yangyang He, Liang Wu, Martin Liu
 #
-#  Reference: Bird, Steven, Edward Loper and Ewan Klein (2009), Natural Language
+#  Reference:
+#  Bird, Steven, Edward Loper and Ewan Klein (2009), Natural Language
 #  Processing with Python. O’Reilly Media Inc.
+#  Marie-Catherine de Marneffe, Bill MacCartney and Christopher D. Manning. 2006. 
+#  Generating Typed Dependency Parses from Phrase Structure Parses. In LREC 2006.
 #  ==========================================================================
 
 #Import NLTK module and Stanford Parser
@@ -39,9 +42,16 @@ def Dep_parce_tree(sentList):
             
             objList = [] #List of objects in the sentence
             dirObj = [] #List of direct objects in the sentence
+            verbList = []
             
+
             #Find direct objects
             for p in parse.triples():
+                #print (p)
+                if "VB" in p[0][1]:
+                    verbList.append(p[0][0])
+                if "VB" in p[2][1]:
+                    verbList.append(p[2][0])
                 
                 if p[1] == "dobj":
                     
@@ -55,6 +65,7 @@ def Dep_parce_tree(sentList):
             objList = list(set(objList))
             
             sent_obj.obj = objList
+            verbList = list(set(verbList))
             
             #Find subject in the sentence
             dep_tree = parse.tree()
@@ -82,6 +93,13 @@ def Dep_parce_tree(sentList):
                 if base_verb not in ("be", "have", "can"):
                     sent_obj.verb.append(base_verb)
         
+        sent_obj.verb = []
+        for v in verbList:
+            base_verb = WordNetLemmatizer().lemmatize(v.lower(),'v')
+            if base_verb not in ("be", "have", "can"):
+                sent_obj.verb.append(base_verb)
+                
+                
         print("Paragraph: " + str(sent_obj.paraID))
         print("Setence: " + str(sent_obj.sentID))
         print("String: " + str(sent_obj))
@@ -91,7 +109,7 @@ def Dep_parce_tree(sentList):
         print()
     return sentList
 
-fileName = "TrumpSpeech"
+fileName = "appendix1"
 sentList = Dep_parce_tree(FileToSentList.fileToSentList(fileName + ".txt"))
 
 

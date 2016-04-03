@@ -1,3 +1,13 @@
+#!/usr/bin/env python3
+#
+#  ==========================================================================
+#  FileToSentList.py - A project for TribaHacks 2016 - LOGAPPS Challenge
+#
+#  Created on: Apr 1, 2016
+#  Author: Yangyang He, Liang Wu, Martin Liu
+#
+#  ==========================================================================
+
 import nltk	
 from nltk.corpus import words
 import re
