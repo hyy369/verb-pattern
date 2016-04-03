@@ -1,3 +1,5 @@
+This is a project for TribeHacks 2016 Logapps Challenge. The original prompt is posted at: https://github.com/ACMWM/Logapps-TribeHacks-Challenge-2016
+
 ### Part I FileToSentList.py
 This source file reads trough a text file, identify complete sentences within the file, and initialize each sentence as a Sentence object. The object will have the following fields:
 * str: the string representation of the sentence's content
@@ -14,4 +16,7 @@ This source file iterates through each Sentence object, and
 * creates a csv file with information of subjects, objects and verbs of each sentence
 
 ### Part III ExtendTable.py
-This source file extends the csv file created in Part II and count verbs of different categories provided by Table 1.
+This source file extends the csv file created in Part II and count verbs of different categories provided by table1.csv.
+
+### Future directions
+We are looking forward to apply our program to various texts across time and create a database of the occurrance of verbs of different categories. We want to look for a pattern in change of the using of verbs over time, and give each verb an index regarding the occurance in a certain time period. We want to use this extended version of our table1.csv to determine the creation time of a given text.
