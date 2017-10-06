@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 #
 #  ==========================================================================
-#  FileToSentList.py - A project for TribaHacks 2016 - LOGAPPS Challenge
+#  expand.py - A project for TribaHacks 2016 - LOGAPPS Challenge
 #
 #  Created on: Apr 1, 2016
 #  Author: Yangyang He, Liang Wu, Martin Liu
@@ -10,12 +10,9 @@
 
 import nltk
 
-
-fileName = "appendix1"
-
 # transform table1 into a dictionary
-def table2dic(table_name):
-  table = open("table1.csv", "r")
+def table2dic(table_filename):
+  table = open(table_filename, "r")
   table.readline()
   table_row = table.readline().strip()
   dictionary = {}
@@ -31,23 +28,23 @@ def table2dic(table_name):
   return dictionary
 
 
+filename = input("Source text file (w/o extension name): ")
+table_dict = table2dic("table1.csv") #provided by the challenfe
 
-table_dict = table2dic("table1.csv")
 
-
-file = open(fileName + "result.csv", "r")
-new_file = open(fileName + "result2.csv", "w")
-file_row = file.readline().strip()
-new_file.write(file_row + ",Ctg. #1,Ctg. #2,Ctg. #3,Ctg. #4,Ctg. #5,Ctg. #6,Ctg. #7\n")
-file_row = file.readline().strip()
+input_file = open(filename + "_decomposed.csv", "r")
+result_file = open(filename + "_expanded.csv", "w")
+input_row = input_file.readline().strip()
+result_file.write(input_row + ",Ctg. #1,Ctg. #2,Ctg. #3,Ctg. #4,Ctg. #5,Ctg. #6,Ctg. #7\n")
+input_row = input_file.readline().strip()
 counted_verb = []
 
 
-while file_row != "":
+while input_row != "":
   new_info = []
-  columns = file_row.split(",")
-  key_words = columns[4].split(" ") #list of verbs
-  
+  input_columns = input_row.split(",")
+  key_words = input_columns[4].split(" ") #list of verbs
+
   for category in range(7):
     sum = 0
     ctg_str = ""
@@ -58,21 +55,18 @@ while file_row != "":
           sum += int(table_dict[verb][category])
           ctg_str += str(table_dict[verb][category]) + "+"
         else:
-          ctg_str += "0+"          
+          ctg_str += "0+"
       else:
         ctg_str += "0+"
-      
+
     new_info.append(ctg_str[0:-1] + "=" + str(sum))
-  new = ",".join(new_info)
-  print(file_row + "," + new)
-  new_file.write(file_row + "," + new + "\n")
+  new_info_str = ",".join(new_info)
+  print(input_row + "," + new_info_str)
+  result_file.write(input_row + "," + new_info_str + "\n")
   for word in key_words:
     if word not in counted_verb:
       counted_verb.append(word)
-  file_row = file.readline().strip()
-  
-new_file.close()
-file.close()
+  input_row = input_file.readline().strip()
 
-  
-  
+result_file.close()
+input_file.close()
