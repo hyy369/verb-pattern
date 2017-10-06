@@ -111,7 +111,7 @@ def dep_parce_tree(sentence_list):
     return sentence_list
 
 filename = input("Source text file (w/o extension name): ")
-sentence_list = dep_parce_tree(Sentence.make_sentence_list("texts/" + filename + ".txt"))
+sentence_list = dep_parce_tree(sentence.make_sentence_list("texts/" + filename + ".txt"))
 
 
 # create first result file
