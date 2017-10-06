@@ -29,11 +29,11 @@ def table2dic(table_filename):
 
 
 filename = input("Source text file (w/o extension name): ")
-table_dict = table2dic("table1.csv") #provided by the challenfe
+table_dict = table2dic("table1.csv") #provided by the challenge
 
 
-input_file = open(filename + "_decomposed.csv", "r")
-result_file = open(filename + "_expanded.csv", "w")
+input_file = open("result/" + filename + "_decomposed.csv", "r")
+result_file = open("result/" + filename + "_expanded.csv", "w")
 input_row = input_file.readline().strip()
 result_file.write(input_row + ",Ctg. #1,Ctg. #2,Ctg. #3,Ctg. #4,Ctg. #5,Ctg. #6,Ctg. #7\n")
 input_row = input_file.readline().strip()
